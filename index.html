@@ -7,15 +7,16 @@
     <title>Alexi Mathiou-Pollak</title>
     <link rel="stylesheet" href="css/style.css"/>
     <link rel="stylesheet" href="css/fonts.css"/>
-    <script src="js/script.js"></script>
+    <script src="js/script.js" defer></script>
 </head>
 
 <header>
-    <nav class="navbar">
+    <nav class="navbar" id="navbar" onclick="reduceMenu();">
         <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Présentation</a></li>
             <li><a href="#">Compétences</a></li>
+            <li><a href="#">Projets</a></li>
             <li><a href="#">Me contacter</a></li>
         </ul>
     </nav>
@@ -23,11 +24,44 @@
 
 <body>
     <div class="board">
-        <h1>Alexi MATHIOU-POLLAK</h1>
-        <p onmouseover="colorChange();"><span id="e">e</span>-portfolio</p>
+        <h1><span class="firstname reveal">Alexi</span><br> <span class="lastname reveal">MATHIOU-POLLAK</span></h1>
+        <p class="portfolio reveal" onmouseover="colorChange();"><span id="pf">PORTFOLIO</span></p>
     </div>
-    <div>
-        
+    <div class="aboutme">
+        <img class="image_me reveal" src="./img/canard.jpeg" alt="Alexi Mathiou-Pollak">
+        <div class="text_aboutme reveal">
+            <h1>Qui suis-je...</h1>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+                It has survived not only five centuries, but also the leap into electronic typesetting,
+                remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            </p>
+        </div>
+    </div>
+    <div class="comp">
+        <div class="html5">
+            <h1>HTML</h1>
+        </div>
+        <div class="css3">
+            <h1></h1>
+        </div>
+        <div class="php7">
+            
+        </div>
+        <div class="js">
+            
+        </div>
+        <div class="sql">
+            
+        </div>
+        <div class="python">
+            
+        </div>
+        <div class="c">
+            
+        </div>
     </div>
 </body>
 

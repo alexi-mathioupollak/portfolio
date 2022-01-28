@@ -53,6 +53,14 @@ html {
     height: 10rem;
 }
 
+.navbar_scroll {
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+}
+
 .navbar a {
     text-decoration: none;
     color: rgb(70, 70, 70);
@@ -80,34 +88,95 @@ html {
     justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    background-color: rgb(30, 30, 50);
-    padding: 20rem;
+    padding: 15rem;
     max-width: 100%;
     max-height: 100%;
+    background-color: rgb(30, 30, 50);
 }
 
-.board > h1 {
+.back_board {
+    background-color: rgb(30, 30, 50);
+}
+
+.board h1 {
     font-size: 14rem;
-    font-family: Roboto-Thin, Arial;
+    font-family: Roboto-Light, Arial;
     color: rgb(220, 220, 220);
+    margin-top: 5rem;
+    text-align: center;
+    font-weight: bold;
 }
 
-.board > p {
-    font-size: 8rem;
+.board p {
+    font-size: 6.4rem;
     font-family: Roboto-Thin, Arial;
     color: rgb(226, 226, 226);
+    margin-top: 4.8rem;
+    margin-bottom: 5rem;
+    transform: translateY(6rem);
 }
 
 
-#e {
-    color: rgb(201, 0, 0);
+#pf {
+    color: #007D59;
 }
+
+
+
+
+.aboutme {
+    background-color: rgb(255, 255, 255);
+    min-height: 30rem;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15rem;
+    margin-bottom: 15rem;
+}
+
+.image_me {
+    max-width: 40rem;
+}
+
+.text_aboutme {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.text_aboutme > h1 {
+    font-size: 5rem;
+    font-family: Roboto-Italic, Arial;
+}
+
+.text_aboutme > p {
+    margin-top: 3rem;
+    font-size: 1.7rem;
+    font-family: Roboto-Light, Arial;
+    max-width: 60rem;
+    line-height: 2.5rem;
+}
+
+
+
+
+
+.comp {
+    display: flex;
+    background-color: rgb(30, 30, 50);
+    min-height: 30rem;
+}
+
+
+
+
+
 
 
 footer {
     display: flex;
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3.5rem;
     justify-content: center;
     align-items: center;
     background-color: rgb(30, 30, 50);
@@ -117,4 +186,21 @@ footer > p {
     font-size: 1.5rem;
     font-family: Roboto-Light, Arial;
     color: rgb(226, 226, 226);
+}
+
+
+
+
+
+.reveal {
+    opacity: 0;
+    transform: translateY(-30px);
+}
+
+.reveal-visible {
+    opacity: 1;
+    transform: translateY(0);
+    /*transition-property: transform, opacity;*/
+    transition: .5s ease-out;
+    transition-delay: .2s;
 }
