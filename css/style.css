@@ -134,7 +134,7 @@ html {
 }
 
 .image_me {
-    max-width: 40rem;
+    max-width: 50rem;
 }
 
 .text_aboutme {
@@ -145,28 +145,54 @@ html {
 }
 
 .text_aboutme > h1 {
-    font-size: 5rem;
+    font-size: 8rem;
     font-family: Roboto-Italic, Arial;
 }
 
 .text_aboutme > p {
     margin-top: 3rem;
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     font-family: Roboto-Light, Arial;
     max-width: 60rem;
-    line-height: 2.5rem;
+    line-height: 3rem;
 }
 
 
 
 
+.all_comp {
+    background-color: rgb(30, 30, 50);
+}
 
 .comp {
     display: flex;
-    background-color: rgb(30, 30, 50);
-    min-height: 30rem;
+    justify-content: space-evenly;
+    min-height: 50rem;
+    flex-wrap: wrap;
+    flex-direction: row;
+    padding: 15rem;
 }
 
+.box {
+    display: flex;
+    background-color: white;
+    border: 1px solid white;
+    min-width: 20rem;
+    min-height: 20rem;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 2rem;
+    box-shadow: 1rem 1rem 3rem;
+    margin: 8rem;
+}
+
+.box > img {
+    max-width: 30rem;
+}
+
+.php7 > img {
+    margin-top: 2rem;
+}
 
 
 
