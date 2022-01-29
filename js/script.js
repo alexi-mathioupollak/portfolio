@@ -3,7 +3,15 @@ let colors = ['#007D59', '#EBC238', '#A2536A']
 
 function colorChange() {
     let e = document.getElementById('pf');
+    let line = document.querySelector('.yellow_line');
+
     let id = Math.floor(Math.random() * 3);
+
+    /*line[0].style.transition = 'color 500ms ease';
+    line[0].style.color = colors[id];
+    line.forEach(function (y) {
+        y.style.color = 'red'
+    })*/
 
     e.style.transition = 'color 500ms ease';
     e.style.color = colors[id];
