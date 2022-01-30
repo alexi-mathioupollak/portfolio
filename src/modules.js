@@ -25,13 +25,14 @@ var line_html = new ProgressBar.Line('#progress_html', {
     easing: 'easeInOut',
     duration: 2200,
     trailWidth: 2,
+    color: '#007D59',
     step: (state, bar) => {
         bar.setText(Math.round(bar.value() * 100) + ' %');
     },
     text: {
         className: 'progressbar_text',
     },
-    from: {color: '#FFEA82'},
+    from: {color: '#007D59'},
     to: {color: '#ED6A5A'},
 })
 
@@ -39,6 +40,7 @@ var line_css = new ProgressBar.Line('#progress_css', {
     strokeWidth: 4.7,
     easing: 'easeInOut',
     duration: 2200,
+    color: '#007D59',
     trailWidth: 2,
     step: (state, bar) => {
         bar.setText(Math.round(bar.value() * 100) + ' %');
@@ -54,6 +56,7 @@ var line_php = new ProgressBar.Line('#progress_php', {
     strokeWidth: 4.7,
     easing: 'easeInOut',
     duration: 2200,
+    color: '#007D59',
     trailWidth: 2,
     step: (state, bar) => {
         bar.setText(Math.round(bar.value() * 100) + ' %');
@@ -70,6 +73,7 @@ var line_js = new ProgressBar.Line('#progress_js', {
     easing: 'easeInOut',
     duration: 2200,
     trailWidth: 2,
+    color: '#007D59',
     step: (state, bar) => {
         bar.setText(Math.round(bar.value() * 100) + ' %');
     },
@@ -83,6 +87,7 @@ var line_js = new ProgressBar.Line('#progress_js', {
 var line_sql = new ProgressBar.Line('#progress_sql', {
     strokeWidth: 4.7,
     easing: 'easeInOut',
+    color: '#007D59',
     duration: 2200,
     trailWidth: 2,
     step: (state, bar) => {
@@ -99,6 +104,7 @@ var line_python = new ProgressBar.Line('#progress_python', {
     strokeWidth: 4.7,
     easing: 'easeInOut',
     duration: 2200,
+    color: '#007D59',
     trailWidth: 2,
     step: (state, bar) => {
         bar.setText(Math.round(bar.value() * 100) + ' %');
@@ -113,6 +119,7 @@ var line_python = new ProgressBar.Line('#progress_python', {
 var line_c = new ProgressBar.Line('#progress_c', {
     strokeWidth: 4.7,
     easing: 'easeInOut',
+    color: '#007D59',
     duration: 2200,
     trailWidth: 2,
     step: (state, bar) => {

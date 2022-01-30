@@ -273,16 +273,19 @@ html.has-scroll-smooth {
 
 .sql > img {
     max-width: 25rem;
-    margin-top: 2.5rem;
+    margin-top: 3rem;
+    margin-bottom: 2rem;
 }
 
 .python > img {
     max-width: 25rem;
     margin-top: 2.5rem;
+    margin-bottom: 2.5rem;
 }
 
 .php7 > img {
     margin-top: 7rem;
+    margin-bottom: 7.3rem;
 }
 
 .progress {
