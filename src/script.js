@@ -1,3 +1,7 @@
+import _ from 'lodash';
+import './style.css';
+import './fonts.css';
+
 let colors = ['#007D59', '#EBC238', '#A2536A']
 
 function colorChange() {
@@ -15,6 +19,7 @@ function colorChange() {
     e.style.transition = 'color 500ms ease';
     e.style.color = colors[id];
 }
+
 
 function nextInt(n) {
     if (Number(n) == 3) {
