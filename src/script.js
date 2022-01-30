@@ -50,12 +50,9 @@ const handleIntersect = function (entries, observer) {
             }
             entry.target.classList.add('reveal-visible')
             observer.unobserve(entry.target)
-        } else {
-            console.log('invisible')
         }
         console.log(entry.intersectionRatio)
     })
-    console.log('handleIntersect')
 }
 
 const animate = document.querySelectorAll('.reveal')

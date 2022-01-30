@@ -264,6 +264,7 @@ html.has-scroll-smooth {
     margin-right: 8rem;
     margin-bottom: 5rem;
     margin-top: 5rem;
+    justify-content: center;
 }
 
 .box > img {
@@ -284,15 +285,17 @@ html.has-scroll-smooth {
     margin-top: 7rem;
 }
 
-#progress {
-    margin: 2rem;
-    width: 20rem;
+.progress {
+    margin-top: 4rem;
+    width: 25rem;
     height: 10rem;
 }
 
 .progressbar_text {
-    font-size: 3rem;
+    font-size: 2rem;
+    text-align: center;
     font-family: Roboto-Light, Arial;
+    color: #999;
 }
 
 

@@ -12,33 +12,130 @@ import template from 'C:/Users/alexi/OneDrive/Documents/portfolio/src/img/templa
 var ProgressBar = require('progressbar.js');
 var LocomotiveScroll = require('../node_modules/locomotive-scroll');
 
-var line = new ProgressBar.Line('#progress', {
-    strokeWidth: 4,
+const progress_bars = function (bars) {
+    bars.forEach(function (bar) {
+        if (document.getElementById('progress')) {
+            console.log('ça marche')
+        }
+    }
+)}
+
+var line_html = new ProgressBar.Line('#progress_html', {
+    strokeWidth: 4.7,
     easing: 'easeInOut',
     duration: 2200,
-    trailWidth: 1,
+    trailWidth: 2,
     step: (state, bar) => {
         bar.setText(Math.round(bar.value() * 100) + ' %');
     },
     text: {
-        style: {
-            color: '#999',
-            padding: '0',
-            margin: '0',
-            transform: null
-        }
+        className: 'progressbar_text',
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+})
+
+var line_css = new ProgressBar.Line('#progress_css', {
+    strokeWidth: 4.7,
+    easing: 'easeInOut',
+    duration: 2200,
+    trailWidth: 2,
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    },
+    text: {
+        className: 'progressbar_text',
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+})
+
+var line_php = new ProgressBar.Line('#progress_php', {
+    strokeWidth: 4.7,
+    easing: 'easeInOut',
+    duration: 2200,
+    trailWidth: 2,
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    },
+    text: {
+        className: 'progressbar_text',
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+})
+
+var line_js = new ProgressBar.Line('#progress_js', {
+    strokeWidth: 4.7,
+    easing: 'easeInOut',
+    duration: 2200,
+    trailWidth: 2,
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    },
+    text: {
+        className: 'progressbar_text',
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+})
+
+var line_sql = new ProgressBar.Line('#progress_sql', {
+    strokeWidth: 4.7,
+    easing: 'easeInOut',
+    duration: 2200,
+    trailWidth: 2,
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    },
+    text: {
+        className: 'progressbar_text',
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+})
+
+var line_python = new ProgressBar.Line('#progress_python', {
+    strokeWidth: 4.7,
+    easing: 'easeInOut',
+    duration: 2200,
+    trailWidth: 2,
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    },
+    text: {
+        className: 'progressbar_text',
+    },
+    from: {color: '#FFEA82'},
+    to: {color: '#ED6A5A'},
+})
+
+var line_c = new ProgressBar.Line('#progress_c', {
+    strokeWidth: 4.7,
+    easing: 'easeInOut',
+    duration: 2200,
+    trailWidth: 2,
+    step: (state, bar) => {
+        bar.setText(Math.round(bar.value() * 100) + ' %');
+    },
+    text: {
+        className: 'progressbar_text',
     },
     from: {color: '#FFEA82'},
     to: {color: '#ED6A5A'},
 })
   
-line.animate(0.85);  // Number from 0.0 to 1.0
+line_html.animate(0.9)  // Number from 0.0 to 1.0
+line_css.animate(0.85)
+line_php.animate(0.50)
+line_js.animate(0.28)
+line_sql.animate(0.94)
+line_python.animate(0.21)
+line_c.animate(0.34)
 
 //const target = document.querySelector('#html');
 
-scroll.scrollTo(target);
-
-const scroll = new LocomotiveScroll({
+/*const scroll = new LocomotiveScroll({
     el: document.querySelector('[data-scroll-container]'),
     smooth: true
-});
+});*/
