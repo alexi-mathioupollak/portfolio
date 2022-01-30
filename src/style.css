@@ -288,7 +288,12 @@ html.has-scroll-smooth {
     margin: 2rem;
     width: 20rem;
     height: 10rem;
-  }
+}
+
+.progressbar_text {
+    font-size: 3rem;
+    font-family: Roboto-Light, Arial;
+}
 
 
 

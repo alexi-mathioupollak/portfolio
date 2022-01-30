@@ -14,7 +14,13 @@ module.exports = {
         clean: true,
         publicPath: '/',
     },
-    plugins: [new HtmlWebpackPlugin({ template: './index.html' })],
+    plugins: [
+        new HtmlWebpackPlugin({
+          inject: 'body',
+          template: './index.html',
+          filename: 'index.html',
+        })
+    ],
     devServer: {
         static: './dist',
     },
@@ -26,7 +32,15 @@ module.exports = {
           },
           {
             test: /\.(png|svg|jpg|jpeg|gif)$/i,
-            type: 'asset/resource',
+            use: [
+                {
+                    loader: 'file-loader',
+                    options: {
+                        name: '[name].[ext]',
+                        outputPath: 'img/',
+                    }
+                }
+            ]
           },
           {
             test: /\.(woff|woff2|eot|ttf|otf)$/i,
