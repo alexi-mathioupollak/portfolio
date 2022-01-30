@@ -1,6 +1,5 @@
 let colors = ['#007D59', '#EBC238', '#A2536A']
 
-
 function colorChange() {
     let e = document.getElementById('pf');
     let line = document.querySelector('.yellow_line');

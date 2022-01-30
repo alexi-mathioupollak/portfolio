@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="src/style.css"/>
     <link rel="stylesheet" href="src/fonts.css"/>
     <script src="src/script.js" defer></script>
+    <script src="./src/modules.js" defer></script>
+    <script src="./dist/progressbar.js" defer></script>
+    <script src="./node_modules/locomotive-scroll/dist/locomotive-scroll.js" defer></script>
 </head>
 
 <header>
@@ -22,7 +25,7 @@
     </nav>
 </header>
 
-<body>
+<body data-scroll-container>
     <div class="board">
         <h1><span class="firstname reveal">Alexi</span><br> <span class="lastname reveal">MATHIOU-POLLAK</span></h1>
         <p class="portfolio reveal" onmouseover="colorChange();"><span id="pf">PORTFOLIO</span></p>
@@ -44,7 +47,7 @@
         <div class="comp">
             <div class="html5 box reveal">
                 <img src="./src/img/html.png" alt="html">
-                <div class="progress_bar"></div>
+                <div class="progress" id="progress"></div>
             </div>
             <div class="css3 box reveal">
                 <img src="./src/img/css.png" alt="html">
