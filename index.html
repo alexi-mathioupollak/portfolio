@@ -11,10 +11,11 @@
     <script src="./src/modules.js" defer></script>
     <script src="./dist/progressbar.js" defer></script>
     <script src="./node_modules/locomotive-scroll/dist/locomotive-scroll.js" defer></script>
+    <script src="./index.js" defer></script>
 </head>
 
 <header>
-    <nav class="navbar" id="navbar" onclick="reduceMenu()">
+    <nav class="navbar" id="navbar">
         <ul>
             <li><a href="#">Accueil</a></li>
             <li><a href="#">Présentation</a></li>
@@ -46,58 +47,47 @@
     <div class="all_comp">
         <div class="comp">
             <div class="html5 box reveal">
-                <img src="img/html.png" id="img_html" alt="html"></img>
-                <div class="progress" id="progress_html"></div>
+                <img class="img__" src="img/html.png" id="img_html" alt="html" onclick="showWindow()"></img>
             </div>
             <div class="css3 box reveal">
-                <img src="img/css.png" id="css" alt="css">
-                <div class="progress" id="progress_css"></div>
+                <img class="img__" src="img/css.png" id="css" alt="css">
             </div>
             <div class="php7 box reveal">
-                <img src="img/php.png" alt="php">
-                <div class="progress" id="progress_php"></div>
+                <img class="img__" src="img/php.png" alt="php">
             </div>
             <div class="js box reveal">
-                <img src="img/js.png" alt="js">
-                <div class="progress" id="progress_js"></div>
+                <img class="img__" src="img/js.png" alt="js">
+            </div>
+            <div class="java box reveal">
+                <img class="img__" src="img/java.png" alt="java">
             </div>
             <div class="sql box reveal">
-                <img src="img/sql.png" alt="sql">
-                <div class="progress" id="progress_sql"></div>
+                <img class="img__" src="img/sql.png" alt="sql">
             </div>
             <div class="python box reveal">
-                <img src="img/python.png" alt="python">
-                <div class="progress" id="progress_python"></div>
+                <img class="img__" src="img/python.png" alt="python">
             </div>
             <div class="c box reveal">
-                <img src="img/c.png" alt="html">
-                <div class="progress" id="progress_c"></div>
-            </div>
+                <img class="img__" src="img/c.png" alt="html">            </div>
         </div>
     </div>
     <div class="all_projects">
         <div class="projects reveal">
             <div class="first_proj box_proj">
-                <h1>SITE WEB : VENTE DE SOUPES</h1>
-                <div class="yellow_line"></div>
+                <h1>SITE WEB NUMERO 1</h1>
                 <img class="template" src="img/template.jpg" alt="template">
-                <div class="yellow_line"></div>
                 <p>Site développé à l'aide de HTML et CSS uniquement.</p>
                 <button class="btn">Plus de détails</button>
             </div>
             <div class="second_proj box_proj">
-                <h1>SITE WEB : GÉNÉRATEUR DE FORMULAIRES HTML</h1>
-                <div class="yellow_line"></div>
+                <h1>SITE WEB NUMERO 2</h1>
                 <img class="template" src="img/template.jpg" alt="template">
-                <div class="yellow_line"></div>
                 <p>Site développé à l'aide de HTML, CSS, PHP et JavaScript.</p>
                 <button class="btn">Plus de détails</button>
             </div>
             <div class="third_proj box_proj">
-                <h1>SITE WEB : VENTE DE HACKS</h1>
-                <div class="yellow_line"></div>
+                <h1>SITE WEB NUMERO 3</h1>
                 <img class="template" src="img/template.jpg" alt="template">
-                <div class="yellow_line"></div>
                 <p>Site développé à l'aide de HTML, CSS et PHP.</p>
                 <button class="btn">Plus de détails</button>
             </div>
@@ -109,7 +99,9 @@
         </div>
     </div>
 </body>
-
+    <div class="block--info hidden" id="block--info">
+        <div class="block--info__text">testqskjfhenikfhnsurncisunfkqiuesg</div>
+    </div>
 <footer>
     <p>© 2022 Copyright. Alexi Mathiou-Pollak</p>
 </footer>

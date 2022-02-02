@@ -168,7 +168,9 @@ html.has-scroll-smooth {
     padding: 15rem;
     max-width: 100%;
     max-height: 100%;
-    background-color: rgb(30, 30, 50);
+	background: linear-gradient(-45deg, #1E1E32, #413953, #331818, #493010);
+    background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
 }
 
 .back_board {
@@ -265,6 +267,7 @@ html.has-scroll-smooth {
     margin-bottom: 5rem;
     margin-top: 5rem;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .box > img {
@@ -286,12 +289,25 @@ html.has-scroll-smooth {
 .php7 > img {
     margin-top: 7rem;
     margin-bottom: 7.3rem;
+    max-width: 27rem!important;
 }
 
+.img__ {
+    transition: transform 250ms ease;
+}
+
+
+.img__:hover {
+    transform: scale(1.1);
+}
+
+
 .progress {
-    margin-top: 4rem;
+    margin-top: 3rem;
     width: 25rem;
     height: 10rem;
+    margin-left: 12.5rem;
+    margin-bottom: 6rem;
 }
 
 .progressbar_text {
@@ -299,8 +315,51 @@ html.has-scroll-smooth {
     text-align: center;
     font-family: Roboto-Light, Arial;
     color: #999;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    left: 50%;
 }
 
+
+
+
+
+.block--info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: rgb(0, 0, 0, .3);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.block--info__text {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(220, 220, 220);
+    align-items: center;
+    min-width: 50vw;
+    min-height: 80vh;
+    border-radius: 3rem;
+}
+
+.hidden {
+    opacity: 0;
+    transform: translateY(-30px);
+    display: none;
+}
+
+.not__hidden {
+    opacity: 1;
+    transform: translateY(0);
+    /*transition-property: transform, opacity;*/
+    transition: .5s ease-out;
+    transition-delay: .2s;
+}
 
 
 
@@ -409,4 +468,24 @@ footer > p {
     /*transition-property: transform, opacity;*/
     transition: .5s ease-out;
     transition-delay: .2s;
+}
+
+
+
+
+
+
+/*   EFFECTS   */
+
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }

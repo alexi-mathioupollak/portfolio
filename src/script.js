@@ -21,13 +21,6 @@ function colorChange() {
 }
 
 
-function nextInt(n) {
-    if (Number(n) == 3) {
-        return 0;
-    } else {
-        return Number(n)+1;
-    }
-}
 
 const ratio = 0
 const options = {
@@ -63,6 +56,7 @@ animate.forEach(function (r) {
     observer.observe(r)
 })
 
+
 function reduceMenu() {
     let menu = document.getElementById('navbar')
     if (window.offsetTop > 10) {
@@ -74,3 +68,9 @@ function reduceMenu() {
 }
 
 let interval = setInterval(colorChange, 1000);
+
+function showWindow() {
+    let window = document.querySelector('.block--info')
+    window.classList.remove('hidden')
+    window.classList.add('not__hidden')
+}
